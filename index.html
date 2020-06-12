@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Front-end developer portfolio. Max Brokhman's portfolio web page">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Front-end developer portfolio</title>
@@ -9,148 +11,23 @@
 
   <body>
     <header class="page-header">
-      <div class="container">
-        <a href="mailto:maxbrokhman@gmail.com" class="header-email">maxbrokhman@gmail.com</a>
-        <a href="tel:0583975010" class="header-phone">058 397 50 10</a>
-      </div>
+      <contacts-block></contacts-block>
     </header>
 
-    <section class="hero-image">
-      <div class="container">
-        <h1 class="heading">Max Brokhman</h1>
-        <p>Front-end developer</p>
-      </div>
+    <section class="name-section">
+      <name-screen></name-screen>
     </section>
 
     <section class="intro">
-      <div class="container">
-        <h2 class="subheading">About me</h2>
-        
-        <p>Self-taught Front-end developer with strong knowledge of JavaScript and React. In my free time I always work on side projects in order to learn new technologies and become better in those that I know.</p>
-
-        <figure class="user-image">
-          <img src="./files/qTqNlJYHtGk-min.jpg" alt="developer photo">
-        </figure>
-        <div class="skills">
-          <h3>My skills</h3>
-          <dl class="skills-list">
-            <dt class="skill-html">HTML</dt>
-            <dd class="level"><div style="width: 70%;">70%</div></dd>
-            <dt class="skill-css">CSS</dt>
-            <dd class="level"><div style="width: 70%;">70%</div></dd>
-            <dt class="skill-js">JavaScript</dt>
-            <dd class="level"><div style="width: 90%;">90%</div></dd>
-            <dt class="skill-react">React</dt>
-            <dd class="level"><div style="width: 80%;">80%</div></dd>
-            <dt class="skill-node">Node</dt>
-            <dd class="level"><div style="width: 60%;">60%</div></dd>
-          </dl>
-        </div>
-      </div>
     </section>
 
     <section class="portfolio">
-      <div class="container">
-        <h2 class="subheading">My works</h2>
-        <ul class="projects">
-          <li class="project project__left">
-            <figure class="project-image project-image__left-sided">
-              <img src="./files/markus-spiske-qjnAnF0jIGk-unsplash.jpg" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Best of 90s</h3>
-            <p class="project-description">Augmented reality gallery.</p>
-            <p class="project-description">Technology stack: Typescript, Three.js, JSARToolkit</p>
-            <a class="button" href="https://github.com/MaxBrokhman/best-of-90s">See on github</a>
-          </li>
-          <li class="project project__right">
-            <figure class="project-image project-image__right-sided">
-              <img src="./files/nerds.png" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Nerds</h3>
-            <p class="project-description">Web studio site.</p>
-            <p class="project-description">Technology stack: HTML, CSS, JavaScript</p>
-            <a class="button" href="https://github.com/MaxBrokhman/nerds">See on github</a>
-          </li>
-          <li class="project project__left">
-            <figure class="project-image project-image__left-sided">
-              <img src="./files/calc.png" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Terms of stay calculator</h3>
-            <p class="project-description">For foreign citizens in Russia.</p>
-            <p class="project-description">Technology stack: HTML, CSS, JavaScript</p>
-            <a class="button" href="https://github.com/MaxBrokhman/terms-of-stay-calculator.io">See on github</a>
-          </li>
-          <li class="project project__right">
-            <figure class="project-image project-image__right-sided">
-              <img src="./files/swdb.png" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Star Wars Database</h3>
-            <p class="project-description">Database of Star Wars universe.</p>
-            <p class="project-description">Technology stack: React, Bootstrap</p>
-            <a class="button" href="https://github.com/MaxBrokhman/sw-db">See on github</a>
-          </li>
-          <li class="project project__left">
-            <figure class="project-image project-image__left-sided">
-              <img src="./files/dev.png" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Devconnector</h3>
-            <p class="project-description">Social network for developers.</p>
-            <p class="project-description">Technology stack: React, Redux, Node, Express, Github API</p>
-            <a class="button" href="https://github.com/MaxBrokhman/devconnector">See on github</a>
-          </li>
-          <li class="project project__right">
-            <figure class="project-image project-image__right-sided">
-              <img src="./files/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Task Manager API</h3>
-            <p class="project-description">REST API server for task manager application.</p>
-            <p class="project-description">Technology stack: Node, Express, MongoDB, Mongoose. Jest and supertest for testing</p>
-            <a class="button" href="https://github.com/MaxBrokhman/task-manager-server">See on github</a>
-          </li>
-          <li class="project project__left">
-            <figure class="project-image project-image__left-sided">
-              <img src="./files/guess.png" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Guess melody</h3>
-            <p class="project-description">SPA game.</p>
-            <p class="project-description">Technology stack: React, Typescript, Jest, Enzyme</p>
-            <a class="button" href="https://github.com/MaxBrokhman/guess-melody">See on github</a>
-          </li>
-          <li class="project project__right">
-            <figure class="project-image project-image__right-sided">
-              <img src="./files/chat.png" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Chat</h3>
-            <p class="project-description">Online SSR chat.</p>
-            <p class="project-description">Technology stack: Node, Express, SocketIO</p>
-            <a class="button" href="https://github.com/MaxBrokhman/chat-app">See on github</a>
-          </li>
-          <li class="project project__left">
-            <figure class="project-image project-image__left-sided">
-              <img src="./files/six.png" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Six Cities</h3>
-            <p class="project-description">Booking SPA.</p>
-            <p class="project-description">Technology stack: React, Typescript, Jest, Enzyme</p>
-            <a class="button" href="https://github.com/MaxBrokhman/six-cities">See on github</a>
-          </li>
-          <li class="project project__right">
-            <figure class="project-image project-image__right-sided">
-              <img src="./files/lh.png" width="928" height="536" alt="web site picture">
-            </figure>
-            <h3>Learn Hebrew</h3>
-            <p class="project-description">Very simple, but effective app to remember hebrew words.</p>
-            <p class="project-description">Technology stack: React, Typescript, lodash</p>
-            <a class="button" href="https://github.com/MaxBrokhman/learn-hebrew">See on github</a>
-          </li>
-        </ul>
-      </div>
     </section>
+
     <footer class="page-footer">
-      <div class="container">
-        <a href="mailto:maxbrokhman@gmail.com" class="footer-email">maxbrokhman@gmail.com</a>
-        <a href="tel:0583975010" class="footer-phone">058 397 50 10</a>
-      </div>
+      <contacts-block></contacts-block>
     </footer>
+
+    <script type="module" src="./src//index.js"></script>
   </body>
 </html>
