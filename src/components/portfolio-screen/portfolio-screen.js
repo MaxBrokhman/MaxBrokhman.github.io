@@ -59,9 +59,7 @@ class PortfolioScreen extends HTMLElement {
   get html() {
     return `
       <h2 class="subheading">My works</h2>
-      <ul class="projects">
-        
-      </ul>
+      <ul class="projects"></ul>
     `
   }
 }

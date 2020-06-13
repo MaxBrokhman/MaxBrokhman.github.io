@@ -261,6 +261,15 @@ body {
   background-image: url("./img/progress-pattern.svg");
 }
 
+@keyframes progress-rise {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: auto;
+  }
+}
+
 .portfolio {
   margin: 0;
   padding-bottom: 160px;

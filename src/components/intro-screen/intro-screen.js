@@ -1,20 +1,72 @@
 import { skills } from '../../config.js'
 
 class IntroScreen extends HTMLElement {
+  static renderSkill(skill) {
+    return `
+      <dt class="skill-${skill.toLowerCase()}">${skill}</dt>
+      <dd class="level"><div style="width: 0;">0%</div></dd>
+    `
+  }
+
+  static animateValue({ 
+    from, 
+    to, 
+    time, 
+    element, 
+  }) {
+    return new Promise((resolve) => {
+      const step = (to - from) / time
+      let currentValue = from
+      const animate = () => {
+        if (currentValue >= to) {
+          return resolve(true)
+        }
+        currentValue += step
+        element.style.width = `${currentValue}%`
+        element.textContent = `${currentValue}%`
+        requestAnimationFrame(animate)
+      }
+      animate()
+    })
+  } 
+
   constructor() {
     super()
     this.className = 'container active'
   }
 
   connectedCallback() {
+    let skillsCounter = 0
     this.innerHTML = this.html
-  }
+    const list = this.querySelector('.skills-list')
+    list.innerHTML = IntroScreen.renderSkill(skills[skillsCounter][0])
+    let currentItem = list.querySelector('.level')
 
-  _renderSkill(skills) {
-    return skills.map(([skill, value]) => `
-      <dt class="skill-${skill.toLowerCase()}">${skill}</dt>
-      <dd class="level"><div style="width: ${value}%;">${value}%</div></dd>
-    `).join('')
+    this.observer = new IntersectionObserver(async (entries) => {
+      if (entries[0].intersectionRatio > 0) {
+        this.observer.unobserve(currentItem)
+        await IntroScreen.animateValue({
+          from: 0,
+          to: skills[skillsCounter][1],
+          time: 40,
+          element: currentItem.querySelector('div')
+        })
+        skillsCounter++
+        if (skillsCounter >= skills.length) {
+          this.observer = null
+          return
+        }
+        const newItemHtml = IntroScreen.renderSkill(skills[skillsCounter][0])
+        list.insertAdjacentHTML('beforeend', newItemHtml)
+        currentItem = list.querySelector('.level:last-child')
+
+        this.observer.observe(currentItem)
+      }
+    }, {
+      threshold: 1,
+    })
+
+    this.observer.observe(currentItem)
   }
 
   get html() {
@@ -29,7 +81,7 @@ class IntroScreen extends HTMLElement {
       <div class="skills">
         <h3>My skills</h3>
         <dl class="skills-list">
-          ${this._renderSkill(skills)}
+          
         </dl>
       </div>
     `
