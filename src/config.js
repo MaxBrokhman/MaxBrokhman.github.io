@@ -1,9 +1,9 @@
 export const skills = [
-  ['HTML', 90],
-  ['CSS', 80],
-  ['JavaScript', 90],
-  ['React', 90],
-  ['Node', 60],
+  { skill: 'HTML', value: 90 },
+  { skill: 'CSS', value: 80 },
+  { skill: 'JavaScript', value: 90 },
+  { skill: 'React', value: 90 },
+  { skill: 'Node', value: 60 },
 ]
 
 export const projects = [
