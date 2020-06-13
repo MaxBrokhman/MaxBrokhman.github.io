@@ -34,14 +34,14 @@ class IntroScreen extends HTMLElement {
     super()
     this.className = 'container active'
     this.innerHTML = this.html
+    
+    this.list = this.querySelector('.skills-list')
   }
 
   connectedCallback() {
     let skillsCounter = 0
-    this.innerHTML = this.html
-    const list = this.querySelector('.skills-list')
-    list.innerHTML = IntroScreen.renderSkill(skills[skillsCounter].skill)
-    let currentItem = list.querySelector('.level')
+    this.list.innerHTML = IntroScreen.renderSkill(skills[skillsCounter].skill)
+    let currentItem = this.list.querySelector('.level')
 
     this.observer = new IntersectionObserver(async (entries) => {
       if (entries[0].intersectionRatio > 0) {
@@ -58,8 +58,8 @@ class IntroScreen extends HTMLElement {
           return
         }
         const newItemHtml = IntroScreen.renderSkill(skills[skillsCounter].skill)
-        list.insertAdjacentHTML('beforeend', newItemHtml)
-        currentItem = list.querySelector('.level:last-child')
+        this.list.insertAdjacentHTML('beforeend', newItemHtml)
+        currentItem = this.list.querySelector('.level:last-child')
 
         this.observer.observe(currentItem)
       }

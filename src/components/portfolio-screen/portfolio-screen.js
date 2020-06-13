@@ -48,14 +48,17 @@ class PortfolioScreen extends HTMLElement {
     this.observer = new IntersectionObserver((entries) => {
       if (entries[0].intersectionRatio > 0) {
         this.observer.unobserve(this.currentItem)
-        if (projectsCounter >= projects.length) {
+        if (projectsCounter > projects.length) {
           this.observer = null
           return
         }
         this.currentItem = this.nextItem
-        this.nextItem = PortfolioScreen.renderProject(projects[projectsCounter], projectsCounter)
+        if (projectsCounter !== projects.length) {
+          this.nextItem = PortfolioScreen.renderProject(projects[projectsCounter], projectsCounter)
+        }
         projectsCounter++
         this.list.appendChild(this.currentItem)
+        
         this.observer.observe(this.currentItem)
       }
     })
