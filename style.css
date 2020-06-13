@@ -21,12 +21,12 @@ body {
 
 @keyframes slide-up {
   0% {
-      opacity: 0;
-      transform: translateY(50px);
+    opacity: 0;
+    transform: translateY(50px);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -127,6 +127,18 @@ body {
   height: 800px;
   background-image: url("./img/hero-image.svg");
   background-repeat: no-repeat;
+  animation: grow-up 1.2s ease;
+}
+
+@keyframes grow-up {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 800px;
+    height: 800px;
+  }
 }
 
 .name-section::after {
