@@ -32,7 +32,7 @@ class IntroScreen extends HTMLElement {
 
   constructor() {
     super()
-    this.className = 'container active'
+    this.className = 'container'
     this.innerHTML = this.html
     
     this.list = this.querySelector('.skills-list')
@@ -75,15 +75,16 @@ class IntroScreen extends HTMLElement {
       <h2 class="subheading">About me</h2>
         
       <p>Self-taught Front-end developer with strong knowledge of JavaScript and React. In my free time I always work on side projects in order to learn new technologies and become better in those that I know.</p>
-
-      <figure class="user-image" width="640px;" height="640px;">
-        <img width="640px;" height="640px;" src="./files/qTqNlJYHtGk-min.jpg" alt="developer photo">
-      </figure>
-      <div class="skills">
-        <h3>My skills</h3>
-        <dl class="skills-list">
-          
-        </dl>
+      <div class="skills-wrapper">
+        <figure class="user-image" width="640px;" height="640px;">
+          <img src="./files/qTqNlJYHtGk-min.jpg" alt="developer photo">
+        </figure>
+        <div class="skills">
+          <h3>My skills</h3>
+          <dl class="skills-list">
+            
+          </dl>
+        </div>
       </div>
     `
   }

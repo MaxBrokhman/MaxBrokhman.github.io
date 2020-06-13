@@ -34,7 +34,7 @@ class PortfolioScreen extends HTMLElement {
 
   constructor() {
     super()
-    this.className = 'container active'
+    this.className = 'container'
     this.list = null
     this.currentItem = PortfolioScreen.renderProject(projects[0], 0)
     this.nextItem = PortfolioScreen.renderProject(projects[1], 1)

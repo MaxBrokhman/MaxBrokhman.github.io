@@ -1,7 +1,7 @@
 class ContentsBlock extends HTMLElement {
   constructor() {
     super()
-    this.className = 'container active'
+    this.className = 'container'
   }
 
   connectedCallback() {

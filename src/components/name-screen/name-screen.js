@@ -2,7 +2,7 @@ class NameScreen extends HTMLElement {
   constructor() {
     super()
     this.attachShadow({ mode: 'open' })
-    this.className = 'container active'
+    this.className = 'container'
   }
 
   connectedCallback() {
@@ -33,6 +33,30 @@ class NameScreen extends HTMLElement {
           font-size: 32px;
           line-height: 48px;
           color: #f9dd79;
+        }
+        @media (max-width: 999px) {
+          h1 {
+            width: 400px;
+            font-size: 50px;
+          }
+        }
+        @media (max-width: 770px) {
+          p {
+            font-size: 25px;
+          }
+        }
+        @media (max-width: 450px) {
+          h1 {
+            width: 300px;
+            font-size: 30px;
+            margin: 0;
+            line-height: 65px;
+          }
+          p {
+            font-size: 20px;
+            padding: 0;
+            padding-top: 15px;
+          }
         }
       </style>
       <h1>Max Brokhman</h1>

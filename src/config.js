@@ -18,21 +18,21 @@ export const projects = [
     image: 'nerds.png',
     name: 'Nerds',
     description: 'Web studio site.',
-    stack: 'HTML, CSS, JavaScript',
+    stack: 'HTML, CSS, JavaScript, Gulp',
     repo: 'https://github.com/MaxBrokhman/nerds',
   },
   {
     image: 'calc.png',
-    name: 'Terms of stay calculator',
+    name: 'Terms calculator',
     description: 'For foreign citizens in Russia.',
-    stack: 'HTML, CSS, JavaScript',
+    stack: 'HTML, CSS, JavaScript, Sass, Webpack',
     repo: 'https://github.com/MaxBrokhman/terms-of-stay-calculator.io',
   },
   {
     image: 'swdb.png',
-    name: 'Star Wars Database',
+    name: 'Star Wars DB',
     description: 'Database of Star Wars universe.',
-    stack: 'React, Bootstrap',
+    stack: 'JavaScript, React, Bootstrap',
     repo: 'https://github.com/MaxBrokhman/sw-db',
   },
   {
@@ -45,8 +45,8 @@ export const projects = [
   {
     image: 'florian-olivo-4hbJ-eymZ1o-unsplash.jpg',
     name: 'Task Manager API',
-    description: 'REST API server for task manager application.',
-    stack: 'Node, Express, MongoDB, Mongoose. Jest and supertest for testing',
+    description: 'REST API for task manager application.',
+    stack: 'Node, Express, MongoDB, Mongoose, Jest',
     repo: 'https://github.com/MaxBrokhman/task-manager-server',
   },
   {
@@ -60,7 +60,7 @@ export const projects = [
     image: 'chat.png',
     name: 'Chat',
     description: 'Online SSR chat.',
-    stack: 'Node, Express, Socket IO',
+    stack: 'Node, Nodemon, Express, Socket IO',
     repo: 'https://github.com/MaxBrokhman/chat-app',
   },
   {
@@ -73,7 +73,7 @@ export const projects = [
   {
     image: 'lh.png',
     name: 'Learn Hebrew',
-    description: 'Very simple, but effective app to remember hebrew words.',
+    description: 'Very simple, but effective SPA to remember hebrew words.',
     stack: 'React, Typescript, lodash',
     repo: 'https://github.com/MaxBrokhman/learn-hebrew',
   },
