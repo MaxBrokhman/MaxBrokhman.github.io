@@ -7,6 +7,15 @@ class NameScreen extends HTMLElement {
 
   connectedCallback() {
     this.shadowRoot.innerHTML = this.html
+    this.insertAdjacentHTML('beforeend', `
+      <a 
+        class="button cv-button" 
+        download 
+        href="./files/Max Brokhman Front-end developer CV.docx"
+      >
+        Get CV
+      </a>
+    `)
   }
 
   get html() {
