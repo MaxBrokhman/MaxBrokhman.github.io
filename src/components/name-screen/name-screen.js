@@ -17,8 +17,8 @@ class NameScreen extends HTMLElement {
         }
         h1 {
           z-index: 1;
-          order: 2;
-          margin: 0 0 0 -10px;
+          margin: 0;
+          margin-bottom: 30px;
           width: 815px;
           font-size: 96px;
           line-height: 112px;
@@ -26,13 +26,18 @@ class NameScreen extends HTMLElement {
         }
         p {
           z-index: 1;
-          order: 1;
           margin: 0;
           padding: 32px 0;
           padding-bottom: 16px;
           font-size: 32px;
           line-height: 48px;
           color: #f9dd79;
+        }
+        ::slotted(.button) {
+          align-self: start;
+          cursor: pointer;
+          width: 125px;
+          text-align: center;
         }
         @media (max-width: 999px) {
           h1 {
@@ -43,13 +48,17 @@ class NameScreen extends HTMLElement {
         @media (max-width: 770px) {
           p {
             font-size: 25px;
+            padding: 0;
+          }
+          h1 {
+            margin-bottom: 15px;
           }
         }
         @media (max-width: 450px) {
           h1 {
             width: 300px;
             font-size: 30px;
-            margin: 0;
+            margin-bottom: 30px;
             line-height: 65px;
           }
           p {
@@ -59,8 +68,10 @@ class NameScreen extends HTMLElement {
           }
         }
       </style>
-      <h1>Max Brokhman</h1>
       <p>Front-end developer</p>
+      
+      <h1>Max Brokhman</h1>
+      <slot></slot>
     `
   }
 }

@@ -18,7 +18,7 @@ class PortfolioScreen extends HTMLElement {
         height="536"
       >
         <img 
-          src="./files/${image}" 
+          src="./img/${image}" 
           width="928" 
           height="536" 
           alt="web site picture"
