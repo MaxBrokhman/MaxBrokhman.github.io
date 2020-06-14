@@ -3,7 +3,7 @@ export const skills = [
   { skill: 'CSS', value: 80 },
   { skill: 'JavaScript', value: 90 },
   { skill: 'React', value: 90 },
-  { skill: 'Node', value: 60 },
+  { skill: 'TypeScript', value: 80 },
 ]
 
 export const projects = [
