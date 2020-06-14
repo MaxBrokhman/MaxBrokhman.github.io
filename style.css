@@ -21,9 +21,9 @@ body {
 
 .page-header .container, 
 .page-footer .container {
-  display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
 }
 
 @-webkit-keyframes slide-up {
@@ -514,10 +514,10 @@ body {
   }
   .page-header .container,
   .page-footer .container {
-    flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    flex-direction: column;
   }
   .contact-link {
     -ms-flex-item-align: start;
