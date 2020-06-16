@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Front-end developer portfolio. Max Brokhman's portfolio web page">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="preload" href="./fonts/Montserrat-Regular.ttf" as="font" crossorigin>
+    <style>
+      @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        src: local('Montserrat'), url('./fonts/Montserrat-Regular.ttf') format('opentype');
+      }
+    </style>
     <link rel="stylesheet" href="./style.css">
     <title>Front-end developer portfolio</title>
   </head>
