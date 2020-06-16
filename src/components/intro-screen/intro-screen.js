@@ -79,7 +79,10 @@ class IntroScreen extends HTMLElement {
         <figure class="user-image" width="640px;" height="640px;">
           <img 
             src="./img/qTqNlJYHtGk.jpg" 
-            srcset="./img/qTqNlJYHtGk-min.jpg 450w"
+            srcset="
+            ./img/qTqNlJYHtGk-min.jpg 450w,
+            ./img/qTqNlJYHtGk.jpg 700w
+            "
             alt="developer photo"
           >
         </figure>

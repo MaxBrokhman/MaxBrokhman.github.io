@@ -15,9 +15,12 @@ class PortfolioScreen extends HTMLElement {
     item.innerHTML = `
       <figure class="project-image project-image__${side}-sided">
         <img 
-          src="./img/${image}"
-          srcset="./img/${imageMin} 450w"
-          alt="web site picture"
+          src="./img/${image}" 
+          srcset="
+          ./img/${imageMin} 450w,
+          ./img/${image} 700w
+          "
+          alt="developer photo"
         >
       </figure>
       <h3>${name}</h3>
