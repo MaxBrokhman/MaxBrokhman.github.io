@@ -9,6 +9,7 @@ export const skills = [
 export const projects = [
   {
     image: 'markus-spiske-qjnAnF0jIGk-unsplash.jpg',
+    imageMin: 'markus-spiske-qjnAnF0jIGk-unsplash-min.jpg',
     name: 'Best of 90s',
     description: 'Augmented reality gallery.',
     stack: 'Typescript, Three.js, JSARToolkit',
@@ -16,6 +17,7 @@ export const projects = [
   },
   {
     image: 'nerds.png',
+    imageMin: 'nerds-min.png',
     name: 'Nerds',
     description: 'Web studio site.',
     stack: 'HTML, CSS, JavaScript, Gulp',
@@ -23,6 +25,7 @@ export const projects = [
   },
   {
     image: 'calc.png',
+    imageMin: 'calc-min.png',
     name: 'Terms calculator',
     description: 'For foreign citizens in Russia.',
     stack: 'HTML, CSS, JavaScript, Sass, Webpack',
@@ -30,6 +33,7 @@ export const projects = [
   },
   {
     image: 'swdb.png',
+    imageMin: 'swdb-min.png',
     name: 'Star Wars DB',
     description: 'Database of Star Wars universe.',
     stack: 'JavaScript, React, Bootstrap',
@@ -37,6 +41,7 @@ export const projects = [
   },
   {
     image: 'dev.png',
+    imageMin: 'dev-min.png',
     name: 'Devconnector',
     description: 'Social network for developers.',
     stack: 'React, Redux, Node, Express, Github API',
@@ -44,6 +49,7 @@ export const projects = [
   },
   {
     image: 'florian-olivo-4hbJ-eymZ1o-unsplash.jpg',
+    imageMin: 'florian-olivo-4hbJ-eymZ1o-unsplash-min.jpg',
     name: 'Task Manager API',
     description: 'REST API for task manager application.',
     stack: 'Node, Express, MongoDB, Mongoose, Jest',
@@ -51,6 +57,7 @@ export const projects = [
   },
   {
     image: 'guess.png',
+    imageMin: 'guess-min.png',
     name: 'Guess melody',
     description: 'SPA game.',
     stack: 'React, Typescript, Jest, Enzyme',
@@ -58,6 +65,7 @@ export const projects = [
   },
   {
     image: 'chat.png',
+    imageMin: 'chat-min.png',
     name: 'Chat',
     description: 'Online SSR chat.',
     stack: 'Node, Nodemon, Express, Socket IO',
@@ -65,6 +73,7 @@ export const projects = [
   },
   {
     image: 'six.png',
+    imageMin: 'six-min.png',
     name: 'Six Cities',
     description: 'Booking SPA.',
     stack: 'React, Typescript, Jest, Enzyme',
@@ -72,6 +81,7 @@ export const projects = [
   },
   {
     image: 'lh.png',
+    imageMin: 'lh-min.png',
     name: 'Learn Hebrew',
     description: 'Very simple, but effective SPA to remember hebrew words.',
     stack: 'React, Typescript, lodash',

@@ -7,20 +7,16 @@ class PortfolioScreen extends HTMLElement {
     description,
     repo,
     stack,
+    imageMin,
   }, idx) {
     const side = idx % 2 === 0 ? 'left' : 'right'
     const item = document.createElement('li')
     item.className = `project project__${side}`
     item.innerHTML = `
-      <figure 
-        class="project-image project-image__${side}-sided" 
-        width="928" 
-        height="536"
-      >
+      <figure class="project-image project-image__${side}-sided">
         <img 
-          src="./img/${image}" 
-          width="928" 
-          height="536" 
+          src="./img/${image}"
+          srcset="./img/${imageMin} 450w"
           alt="web site picture"
         >
       </figure>
