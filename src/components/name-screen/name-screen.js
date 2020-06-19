@@ -27,19 +27,18 @@ class NameScreen extends HTMLElement {
         h1 {
           z-index: 1;
           margin: 0;
-          margin-bottom: 30px;
-          width: 815px;
-          font-size: 96px;
-          line-height: 112px;
+          margin-bottom: 0.3em;
+          font-size: 6rem;
+          line-height: 1.2;
           font-weight: 500;
         }
         p {
           z-index: 1;
           margin: 0;
-          padding: 32px 0;
-          padding-bottom: 16px;
-          font-size: 32px;
-          line-height: 48px;
+          padding: 1em 0;
+          padding-bottom: 0.5em;
+          font-size: 2rem;
+          line-height: 1.2;
           color: #f9dd79;
         }
         ::slotted(.button) {
@@ -48,32 +47,26 @@ class NameScreen extends HTMLElement {
           width: 125px;
           text-align: center;
         }
-        @media (max-width: 999px) {
-          h1 {
-            width: 400px;
-            font-size: 50px;
-          }
-        }
         @media (max-width: 770px) {
+          h1 {
+            font-size: 4rem;
+          }
           p {
-            font-size: 25px;
             padding: 0;
           }
-          h1 {
-            margin-bottom: 15px;
+          ::slotted(.button) {
+            width: 100px;
           }
         }
         @media (max-width: 450px) {
           h1 {
-            width: 300px;
-            font-size: 30px;
-            margin-bottom: 30px;
-            line-height: 65px;
+            font-size: 2.2rem;
           }
           p {
-            font-size: 20px;
-            padding: 0;
-            padding-top: 15px;
+            font-size: 1.5rem;
+          }
+          h1, p {
+            line-height: 3;
           }
         }
       </style>
